@@ -86,8 +86,6 @@ print('solution:', z)
 print('solution objective:', tsp.tsp_value(z, ins.w))
 draw_tsp_solution(G, z, colors, pos)
 
-seed = 10598
-
 spsa = SPSA(max_trials=300)
 ry = RY(qubitOp.num_qubits, depth=5, entanglement='linear')
 vqe = VQE(qubitOp, ry, spsa)
